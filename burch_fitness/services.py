@@ -1,8 +1,10 @@
 import openai
 import torch
+import os
 from .gan import Generator, generate_synthetic_data
+from decouple import config
 
-openai.api_key = 'sk-proj-ZLOLOhKm2RClZL2tB7VfT3BlbkFJZRcgAJOH3NPnDOLquwwO'
+api_key = config("OPENAI_API_KEY")
 
 def generate_meal_plan(user_profile):
     prompt = f"Create a meal plan for a user with the following profile: {user_profile}"
