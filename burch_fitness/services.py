@@ -1,6 +1,5 @@
 import openai
 import torch
-import os
 from .gan import Generator, generate_synthetic_data
 from decouple import config
 
