@@ -3,6 +3,8 @@
 __pycache__
 *.pyc
 node_modules
-staticfiles
 .venv
 .env
+.git
+.DS_Store
+*.pyo
