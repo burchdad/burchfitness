@@ -32,6 +32,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'whitenoise.runserver_nostatic',  # Add Whitenoise runserver integration
+    'burchfitness',  # Make sure to replace with your actual app name
+    'rest_framework',  # If using Django Rest Framework
 ]
 
 MIDDLEWARE = [
