@@ -50,9 +50,9 @@ ROOT_URLCONF = 'burch_fitness.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIR'
-         'OPTIONS': {
+        'DIRS': [],  # Add the directories where your templates are located
+        'APP_DIRS': True,
+        'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
@@ -108,7 +108,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATICFILES_DIRS = [BASE_DIR / 'static']
 
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
