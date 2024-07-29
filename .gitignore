@@ -1,5 +1,10 @@
-# .gitignore
-.env
+node_modules/
+screens/
+services/
 .venv/
-__pycache__/
-*.pyc
+.env
+*.md
+package-lock.json
+package.json
+db.sqlite3
+staticfiles/
