@@ -1,7 +1,11 @@
+from django.http import HttpResponse
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from .services import generate_meal_plan, generate_workout_routine
+
+def home(request):
+    return HttpResponse("Hello, world! This is the home page.")
 
 class GenerateMealPlanView(APIView):
     def post(self, request):
