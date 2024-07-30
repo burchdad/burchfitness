@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',  # Add Whitenoise runserver integration
     'burch_fitness',  # Make sure to replace with your actual app name
     'rest_framework',  # If using Django Rest Framework
+    'core',  # If using a core app
 ]
 
 MIDDLEWARE = [
